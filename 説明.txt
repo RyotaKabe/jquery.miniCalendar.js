@@ -1,0 +1,66 @@
+未完成ではありますが、
+カレンダーをつくるためのjqueryです。
+
+使用例は、
+
+	$("div").call_miniCalendar({},{},function(selectDay){
+	});
+
+とすると、カレンダーが一発で使えます。
+
+引数の説明は以下の通りとなります。
+	$("div").call_miniCalendar({
+		カレンダーの構造をパラメータ指定
+	},{
+		カレンダーのデザインをパラメータ指定
+	},function(selectDay){
+		日にちがクリックされた時の処理。
+		引数selectDayには、クリックされた日付の年月日が入っていますので使ってください
+	});
+
+まだ作成途中なので、値を入れても変わらないものがありますが、
+参考までにデフォルト値を載せておきます。
+	第一引数↓
+            lastIcon:'<<',
+            nextIcon:'>>',
+            yearLeft: '',
+            yearRight: '年',
+            monthLeft: '',
+            monthRight: '月',
+            weekWord:['日','月','火','水','木','金','土'],
+            dateLeft: '',
+            dateRight: '',
+            monthChanger: 0
+	第二引数↓
+            lastIcom: '',
+            nextIcon: '',
+            year: '',
+            month: '',
+            weekHeaderFont:{
+                fontWeight:'bold'
+            },
+            weekHeaderColor:{
+                sun:'',
+                mon:'',
+                tue:'',
+                wed:'',
+                thu:'',
+                fri:'',
+                sat:''
+            },
+            weekColor:{
+                sun:'red',
+                mon:'silver',
+                tue:'silver',
+                wed:'silver',
+                thu:'silver',
+                fri:'silver',
+                sat:'blue'
+            }
+	第三引数↓
+	　　selectDay変数には、4つの値を持たせています。
+		year
+		month
+		date
+		day
+
